@@ -101,8 +101,7 @@ a{
 .header{
 	display: block;
 	width: 100%;
-	position: relative;
-	z-index: 99;
+	position: fixed;
 	padding:15px;
 	background-color: #000000;
 }
@@ -262,6 +261,8 @@ a{
   height: 700px;
   width: 100%;
   display: block;
+  position: absolute;
+  top: 90px;
 }
 .mobile-menu-head,
 .mobile-menu-trigger{

@@ -74,15 +74,8 @@ const search = document.getElementById("search");
 
 window.addEventListener("scroll", function () {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > 20) {
-    navbar.style.backgroundColor = "white";
-    log.style.color = "black";
-    for (let i = 0; i < all.length; i++) {
-      all[i].style.color = "black";
-    }
-    contact.style.color = "black";
-    search.style.color = "black";
-  } else {
+  console.log(scrollTop);
+  if (scrollTop === 0) {
     navbar.style.backgroundColor = "black";
     log.style.color = "white";
     for (let i = 0; i < all.length; i++) {
@@ -90,6 +83,18 @@ window.addEventListener("scroll", function () {
     }
     contact.style.color = "white";
     search.style.color = "white";
+  } else if (scrollTop > lastScrollTop) {
+    navbar.style.display = "none";
+  } else {
+    navbar.style.top = "0";
+    navbar.style.display = "block";
+    navbar.style.backgroundColor = "white";
+    log.style.color = "black";
+    for (let i = 0; i < all.length; i++) {
+      all[i].style.color = "black";
+    }
+    contact.style.color = "black";
+    search.style.color = "black";
   }
 
   lastScrollTop = scrollTop;
