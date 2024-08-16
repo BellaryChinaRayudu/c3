@@ -103,6 +103,7 @@ a{
 	width: 100%;
 	position: fixed;
 	padding:15px;
+	top: 0;
 	background-color: #000000;
 }
 .header:hover{
@@ -261,8 +262,7 @@ a{
   height: 700px;
   width: 100%;
   display: block;
-  position: absolute;
-  top: 90px;
+  margin-top: 100px;
 }
 .mobile-menu-head,
 .mobile-menu-trigger{
