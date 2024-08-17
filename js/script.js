@@ -76,46 +76,39 @@ const search = document.getElementById("search");
 
 window.addEventListener("scroll", function () {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop === 0) {
-    navbar.style.backgroundColor = "black";
-    log.style.color = "white";
-    for (let i = 0; i < all.length; i++) {
-      all[i].style.color = "white";
+  if (active !== 0) {
+  } else if (active === 0) {
+    if (scrollTop === 0) {
+      navbar.style.backgroundColor = "black";
+      log.style.color = "white";
+      for (let i = 0; i < all.length; i++) {
+        all[i].style.color = "white";
+      }
+      contact.style.color = "white";
+      search.style.color = "white";
+    } else if (scrollTop > lastScrollTop) {
+      navbar.style.display = "none";
+    } else {
+      navbar.style.top = "0";
+      navbar.style.display = "block";
+      navbar.style.backgroundColor = "white";
+      log.style.color = "black";
+      for (let i = 0; i < all.length; i++) {
+        all[i].style.color = "black";
+      }
+      contact.style.color = "black";
+      search.style.color = "black";
     }
-    contact.style.color = "white";
-    search.style.color = "white";
-  } else if (scrollTop > lastScrollTop) {
-    navbar.style.display = "none";
-  } else {
-    navbar.style.top = "0";
-    navbar.style.display = "block";
-    navbar.style.backgroundColor = "white";
-    log.style.color = "black";
-    for (let i = 0; i < all.length; i++) {
-      all[i].style.color = "black";
-    }
-    contact.style.color = "black";
-    search.style.color = "black";
-  }
 
-  lastScrollTop = scrollTop;
+    lastScrollTop = scrollTop;
+  }
 });
 
 let active = 0;
 
-window.addEventListener(
-  "wheel",
-  (event) => {
-    if (active !== 0) {
-      event.preventDefault();
-      event.stopPropagation();
-      return false;
-    } else {
-      return true;
-    }
-  },
-  { passive: false }
-);
+for (let i = 0; i < submenu.length; i++) {
+  submenu[i].addEventListener("scroll", (event) => {}, { passive: false });
+}
 
 $(document).ready(function () {
   $(nav).mouseover(function () {

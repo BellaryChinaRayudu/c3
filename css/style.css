@@ -7,7 +7,6 @@ body{
 	overflow-x: hidden;
 }
 
-
 *{
 	margin:0;
 	box-sizing: border-box;
@@ -29,8 +28,8 @@ body{
    display: flex;
    justify-content: center;
    align-items: start;
-
 }
+
 .search-btn{
 	margin-left: px;
 	width: 200px;
@@ -102,6 +101,7 @@ a{
 	display: block;
 	width: 100%;
 	position: fixed;
+	z-index: 0;
 	padding:15px;
 	top: 0;
 	background-color: #000000;
@@ -160,7 +160,6 @@ a{
 }
 .header .menu > ul > li .sub-menu{
 	position: absolute;
-	z-index: 500;
 	background-color:#ffffff;
 	box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3); 
 	padding: 20px 30px;
@@ -174,18 +173,13 @@ a{
 	margin-top: 0;
 	visibility: visible;
 	opacity: 1;
-}
- .header .menu > ul > li:hover> a{
-    color: red;
+	min-width: 100vw;
 }
 .header .menu > ul > li.menu-item-has-children >a{
    color: white;
 }
 .header:hover .menu > ul > li.menu-item-has-children >a{
 	color: black;
- }
- .active{
-	border: 20px solid red;
  }
 }
 .header .menu > ul > li .sub-menu > ul > li{
@@ -232,6 +226,7 @@ a{
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item{
   flex:0 0 25%;
   padding:0 15px;
+  max-width: 20%;
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title{
 	font-size: 16px;
