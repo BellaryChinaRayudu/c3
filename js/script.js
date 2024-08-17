@@ -45,9 +45,11 @@ function showSubMenu(hasChildren) {
   subMenu = hasChildren.querySelector(".sub-menu");
   subMenu.classList.add("active");
   subMenu.style.animation = "slideLeft 0.5s ease forwards";
+  menuMain.style.visibility = "hidden";
   const menuTitle =
-    hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+    hasChildren.querySelector(".i").parentNode.childNodes[0].textContent;
   menu.querySelector(".current-menu-title").innerHTML = menuTitle;
+  console.log(menuTitle);
   menu.querySelector(".mobile-menu-head").classList.add("active");
 }
 
@@ -56,6 +58,7 @@ function hideSubMenu() {
   setTimeout(() => {
     subMenu.classList.remove("active");
   }, 300);
+  menuMain.style.visibility = "visible";
   menu.querySelector(".current-menu-title").innerHTML = "";
   menu.querySelector(".mobile-menu-head").classList.remove("active");
 }
