@@ -13,6 +13,7 @@ const t5 = document.querySelector(".t5");
 const t6 = document.querySelector(".t6");
 const submenu = document.querySelectorAll(".sub-menu");
 const menuhas = document.querySelectorAll(".menu-item-has-children");
+const anchor = document.getElementById("anchor");
 
 let subMenu;
 menuMain.addEventListener("click", (e) => {
@@ -89,6 +90,7 @@ window.addEventListener("scroll", function () {
       }
       contact.style.color = "white";
       search.style.color = "white";
+      anchor.style.color = "white";
     } else if (scrollTop > lastScrollTop) {
       navbar.style.display = "none";
     } else {
@@ -101,6 +103,7 @@ window.addEventListener("scroll", function () {
       }
       contact.style.color = "black";
       search.style.color = "black";
+      anchor.style.color = "black";
     }
 
     lastScrollTop = scrollTop;
@@ -122,6 +125,7 @@ $(document).ready(function () {
     }
     $(contact).css("color", "black");
     $(search).css("color", "black");
+    $(anchor).css("color", "black");
   });
   $(navbar).mouseout(function () {
     $(nav).css("background-color", "black");
@@ -131,6 +135,7 @@ $(document).ready(function () {
     }
     $(contact).css("color", "white");
     $(search).css("color", "white");
+    $(anchor).css("color", "white");
   });
 });
 

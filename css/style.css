@@ -254,10 +254,20 @@ a{
 
 /* banner section */
 .banner-section{
-  height: 700px;
   width: 100%;
   display: block;
-  margin-top: 100px;
+  height: 90vh;
+  margin-top: 75px;
+  color: white;
+  background-color: black;
+  padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.banner-section p{
+  width: 60%;
 }
 .mobile-menu-head,
 .mobile-menu-trigger{
@@ -489,7 +499,6 @@ a{
 	
 }
 
-
 .getstart{
 	background-color: gray;
 	margin-top: 10px;
@@ -500,4 +509,59 @@ a{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+.proven-result{
+	background-color: gray;
+	color: white;
+	height: 90vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 100px;
+}
+.proven-result div{
+	margin-top: 30px;
+	display: flex;
+	background-color: #000000;
+	height: 100px;
+}
+.proven-result h1{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.more-information{
+	display: flex;
+	background-color: #555555;
+	height: 30vh;
+	gap: 100px;
+	padding-left: 150px;
+	align-items: center;
+}
+footer{
+	background-color: #333333;
+}
+footer .links{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+footer .links div{
+	width: 30%;
+	color: white;
+	margin: 20px;
+}
+.social div{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	gap: 40px;
+}
+.social{
+	text-align: center;
+}
+.banner-head{
+	border: 2px solid black;
+   border-radius: 2px;
 }
