@@ -10,6 +10,11 @@ body{
 	margin:0;
 	box-sizing: border-box;
 }
+@media (max-width: 992px){
+	header .container .logo svg{
+		width: 75px;
+	}
+}
 .main-bg{
 	background-color:white;
 	display: flex;
@@ -1047,16 +1052,13 @@ body {
     gap: 20px;
     box-sizing: border-box;
 }
-
 .flivo h1 {
     color: white;
 }
-
 .flivo p {
     color: #828282;
     line-height: 1.6;
 }
-
 .flivo button {
     color: white;
     background-color: transparent;
@@ -1064,7 +1066,6 @@ body {
     padding: 10px;
     cursor: pointer;
 }
-
 .flivo hr {
     border: 1px solid white;
     margin: 20px 0;
@@ -1075,11 +1076,11 @@ body {
 	min-height: 350px;
 	padding: 0px !important;
 	margin: 0px;
-	display: none !important;
 }
 .prove-toggle img{
 	max-height: 200px;
 }
+
 .prove-hover{
 	background-color: transparent !important;
 
@@ -1087,3 +1088,70 @@ body {
 .prove-hover:hover .prove-toggle{
 		display: flex !important;
 }
+.hov-button{
+	background-color: transparent;
+	border: none;
+	color: #ffffff;
+}
+.prove-toggle1{
+  display: none;
+  padding: 0px !important;
+}
+.prove-toggle2{
+	display: none;
+	padding: 0px !important;
+  }
+  .prove-toggle3{
+	display: none;
+	padding: 0px !important;
+  }
+  .prove-toggle4{
+	display: none ;
+	padding: 0px !important;
+  }
+  .cd{
+	position: relative;
+	background-color: transparent !important;
+  }
+  @media (max-width:992px){
+	.frist-card{
+		min-width: 90% !important;
+	}
+	.all-cards{
+		width: 100vw;
+		padding: 0px;
+		margin-left: 0px;
+	}
+	.main-cont{
+		padding-left: 0px;
+	}
+  }
+  @media (max-width: 992px) {
+	.all-cards{
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+	}
+	.banner-head{
+		width:250px;
+		font-size:10px;
+	}
+	.banner-section {
+		text-align:center;
+		p{
+			text-align:left;
+		}
+		
+	}
+	header .container .logo svg {
+		width: 75px;
+	}
+	.world-card{
+		padding: 30px;
+	}
+	.all-cards-for-3-cards{
+		padding: 30px;
+	}
+
+} 

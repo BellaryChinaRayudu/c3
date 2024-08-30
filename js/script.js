@@ -232,3 +232,105 @@ $(document).ready(function () {
     });
   }
 });
+
+
+const hover1=document.getElementById("hov-button1");
+const hover2=document.getElementById("hov-button2");
+const hover3=document.getElementById("hov-button3");
+const hover4=document.getElementById("hov-button4");
+
+const dis1=document.querySelector(".prove-toggle1");
+const dis2=document.querySelector(".prove-toggle2");
+const dis3=document.querySelector(".prove-toggle3");
+const dis4=document.querySelector(".prove-toggle4");
+dis1.style.display="none";
+dis2.style.display="none";
+dis3.style.display="none";
+dis4.style.display="none";
+
+$(document).ready(function () {
+    $(hover1).mouseover(function () {
+      dis1.style.display="block";
+      dis1.style.position="absolute";
+      dis1.style.top="-300px";
+      dis1.style.width="350px";
+      dis2.style.display="none";
+      dis3.style.display="none";
+      dis4.style.display="none";
+    });
+    $(hover1).mouseout(function () {
+      dis1.style.display="none";
+    });
+});
+
+$(document).ready(function () {
+  $(hover4).mouseover(function () {
+    dis4.style.display="block";
+    dis4.style.position="absolute";
+    dis4.style.top="-300px";
+    dis4.style.width="350px";
+  });
+  $(hover4).mouseout(function () {
+    dis4.style.display="none";
+  });
+});
+
+$(document).ready(function () {
+  $(hover2).mouseover(function () {
+    dis2.style.position="absolute";
+    dis2.style.top="-300px";
+    dis2.style.display="block";
+    dis2.style.width="350px";
+  });
+  $(hover2).mouseout(function () {
+    dis2.style.display="none";
+  });
+});
+
+$(document).ready(function () {
+  $(hover3).mouseover(function () {
+    dis3.style.display="block";
+    dis3.style.position="absolute";
+    dis3.style.width="350px";
+    dis3.style.top="-300px";
+  });
+  $(hover3).mouseout(function () {
+    dis3.style.display="none";
+  });
+});
+
+// $(document).ready(function () {
+//   $(hover2).mouseover(function () {
+//     dis1.style.display="none";
+//     dis2.style.display="block";
+//     dis3.style.display="none";
+//     dis4.style.display="none";
+//   });
+//   $(hover1).mouseout(function () {
+//     dis1.style.display="none";
+//   });
+// });
+
+// $(document).ready(function () {
+//   $(hover1).mouseover(function () {
+//     dis1.style.display="block";
+//     dis2.style.display="none";
+//     dis3.style.display="none";
+//     dis4.style.display="none";
+//   });
+//   $(hover1).mouseout(function () {
+//     dis1.style.display="none";
+//   });
+// });
+
+// $(document).ready(function () {
+//   $(hover1).mouseover(function () {
+//     dis1.style.display="block";
+//     dis2.style.display="none";
+//     dis3.style.display="none";
+//     dis4.style.display="none";
+//   });
+//   $(hover1).mouseout(function () {
+//     dis1.style.display="none";
+//   });
+// });
