@@ -2,11 +2,10 @@
 
 body{
 	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
+	font-family:  sans-serif;
 	font-weight: 400;
 	overflow-x: hidden;
 }
-
 *{
 	margin:0;
 	box-sizing: border-box;
@@ -100,7 +99,7 @@ a{
 	display: block;
 	width: 100vw;
 	position: fixed;
-	z-index: 0;
+	z-index: 99999;
 	padding:15px;
 	top: 0;
 	background-color: #000000;
@@ -268,6 +267,7 @@ gap: 30px;
 }
 .banner-section p{
   width: 60%;
+  color: #828282;
 }
 .mobile-menu-head,
 .mobile-menu-trigger{
@@ -517,7 +517,7 @@ gap: 30px;
 	background-color: #1A1A1A;
 	background-size: cover;
 	color: white;
-	height: 90vh;
+	min-height: 90vh;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -546,10 +546,9 @@ gap: 30px;
 .more-information{
 	display: flex;
 	background-color: #2A2A2A;
-	height: 30vh;
 	gap: 100px;
 	align-items: center;
-	padding: 5px 20px 5px;
+	padding: 80px 40px 80px;
 }
 .more-information div{
   width: 45%;
@@ -567,14 +566,16 @@ gap: 30px;
 }
 footer{
 	background-color: #1A1A1A;
+	padding-top: 70px;
+	padding-bottom: 120px;
 }
 footer .links{
 	display: flex;
 	flex-wrap: wrap;
-	padding: 30px;
+	padding: 10px;
 }
 footer .links div{
-	width: 29%;
+	width: 20%;
 	color: white;
 	margin: 20px;
 }
@@ -586,6 +587,8 @@ footer .links div{
 }
 .links h4{
 	color: #828282;
+	font-size: 15px;
+	line-height: 20px;
 }
 .social{
 	text-align: center;
@@ -640,7 +643,10 @@ body {
     overflow-x: hidden;
     /* Ensures no overflow on any sections */
     background-color: black;
-
+	padding: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 130px;
     /* Apply black background to main content sections */
 }
 
@@ -650,12 +656,11 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 0 20px;
+    padding: 100px;
     box-sizing: border-box;
 }
 
-.frist-card,
-.frist-card-iframe {
+.frist-card {
     width: 320px;
     background-color: #2A2A2A;
     display: flex;
@@ -663,6 +668,20 @@ body {
     overflow: hidden;
     margin-top: 10px;
     box-sizing: border-box;
+	height: 350px;
+}
+.frist-card-iframe{
+	width: 320px;
+    background-color: #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 10px;
+    box-sizing: border-box;
+	height: 480px;
+}
+.frist-card-iframe div{
+	padding: 30px;
 }
 
 .datascience-card {
@@ -676,13 +695,12 @@ body {
     padding: 20px;
     box-sizing: border-box;
     line-height: 0%;
+	cursor: pointer;
 }
 
 .datascience-card:hover {
-    transform: scaleX(1.0);
-    transition: transform 0.3s;
     margin-left: 20px;
-    cursor: pointer;
+    transition: transform 0.3s;
 }
 
 .add-margin {
@@ -697,8 +715,14 @@ body {
     transition: filter 0.3s ease-in-out;
 }
 
-.image:hover {
-    filter: grayscale(0%);
+.frist-card:hover .image{
+	filter: grayscale(0%);
+	height: 200px;
+	transition: 1s;
+}
+.frist-card:hover{
+	height: 400px;
+	transition: 1s;
 }
 
 .iconimage {
@@ -855,11 +879,13 @@ body {
         align-items: flex-start;
         /* Align items at the start of the cross-axis */
         flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
         background-color: #2A2A2A;
         gap: 20px;
         color: white;
+		padding-top: 50px;
+		padding-bottom: 50px;
     }
     .text-ai-customer{
         padding-left: 35px;
@@ -982,7 +1008,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 100px;
     margin-top: 10px;
     box-sizing: border-box;
 }
@@ -1042,4 +1068,22 @@ body {
 .flivo hr {
     border: 1px solid white;
     margin: 20px 0;
+}
+.prove-toggle{
+	background-color: #555555;
+	width: 400px;
+	min-height: 350px;
+	padding: 0px !important;
+	margin: 0px;
+	display: none !important;
+}
+.prove-toggle img{
+	max-height: 200px;
+}
+.prove-hover{
+	background-color: transparent !important;
+
+}
+.prove-hover:hover .prove-toggle{
+		display: flex !important;
 }
