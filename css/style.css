@@ -1153,5 +1153,26 @@ body {
 	.all-cards-for-3-cards{
 		padding: 30px;
 	}
+	.p-c{
+		display: none !important;
+	}
+	.proven-result{
+		padding: 0px;
+		min-height: 200px !important;
+	}
+    .prove{
+		width: 100%;
+		padding-top: 0px;
+	}
 
+	.more-information{
+		height: auto;
+	}
+	.links{
+		display: none !important;
+	}
+	.social div{
+		flex-direction: column;
+		gap: 2px;
+	}
 } 
