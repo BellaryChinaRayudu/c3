@@ -661,7 +661,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 100px;
+    padding: 30px;
     box-sizing: border-box;
 }
 
@@ -673,7 +673,7 @@ body {
     overflow: hidden;
     margin-top: 10px;
     box-sizing: border-box;
-	height: 350px;
+	height: 340px;
 }
 .frist-card-iframe{
 	width: 320px;
@@ -741,7 +741,8 @@ body {
 .text {
     text-align: start;
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 14px;
+	height: 50px;
     color: aliceblue;
     padding-left: 12px;
     padding-right: 12px;
@@ -797,6 +798,9 @@ body {
     justify-content: space-between;
     color: #828282;
     padding: 20px;
+}
+.last-icon p{
+	font-size: 12px !important;
 }
 .text-ai-customer {
     padding-left: 35px;
@@ -1176,3 +1180,8 @@ body {
 		gap: 2px;
 	}
 } 
+.det{
+	padding: 0px !important;
+	margin-top: 0px !important;
+	padding: 10px !important;
+}
