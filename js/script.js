@@ -253,6 +253,7 @@ $(document).ready(function () {
       dis1.style.display="block";
       dis1.style.position="absolute";
       dis1.style.top="-300px";
+      dis1.style.backgroundColor="#2A2A2A"
       dis1.style.width="350px";
       dis2.style.display="none";
       dis3.style.display="none";
@@ -268,6 +269,7 @@ $(document).ready(function () {
     dis4.style.display="block";
     dis4.style.position="absolute";
     dis4.style.top="-300px";
+          dis4.style.backgroundColor="#2A2A2A"
     dis4.style.width="350px";
   });
   $(hover4).mouseout(function () {
@@ -279,6 +281,7 @@ $(document).ready(function () {
   $(hover2).mouseover(function () {
     dis2.style.position="absolute";
     dis2.style.top="-300px";
+          dis2.style.backgroundColor="#2A2A2A"
     dis2.style.display="block";
     dis2.style.width="350px";
   });
@@ -291,6 +294,7 @@ $(document).ready(function () {
   $(hover3).mouseover(function () {
     dis3.style.display="block";
     dis3.style.position="absolute";
+          dis3.style.backgroundColor="#2A2A2A"
     dis3.style.width="350px";
     dis3.style.top="-300px";
   });
