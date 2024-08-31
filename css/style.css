@@ -670,10 +670,8 @@ body {
     background-color: #2A2A2A;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    margin-top: 10px;
-    box-sizing: border-box;
-	height: 340px;
+    margin-top: 50px !important;
+	min-height: 340px;
 }
 .frist-card-iframe{
 	width: 320px;
@@ -722,12 +720,14 @@ body {
 
 .frist-card:hover .image{
 	filter: grayscale(0%);
-	height: 200px;
-	transition: 1s;
+    transform: scaleY(1.2);
+	position: relative;
+	top: -20px;
+	transition: 1s !important;
 }
-.frist-card:hover{
-	height: 400px;
-	transition: 1s;
+.frist-card:hover .iconimage{
+	position: relative;
+	top: -2px;
 }
 
 .iconimage {
@@ -1184,4 +1184,9 @@ body {
 	padding: 0px !important;
 	margin-top: 0px !important;
 	padding: 10px !important;
+}
+.frist-card:hover img{
+	transform: scaleY(1.2);
+	position: relative;
+	top: -16px;
 }
