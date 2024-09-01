@@ -258,6 +258,7 @@ $(document).ready(function () {
       dis2.style.display="none";
       dis3.style.display="none";
       dis4.style.display="none";
+      dis1.style.left="-10px";
     });
     $(hover1).mouseout(function () {
       dis1.style.display="none";
@@ -271,6 +272,7 @@ $(document).ready(function () {
     dis4.style.top="-300px";
           dis4.style.backgroundColor="#2A2A2A"
     dis4.style.width="350px";
+    dis4.style.left="730px";
   });
   $(hover4).mouseout(function () {
     dis4.style.display="none";
@@ -281,7 +283,8 @@ $(document).ready(function () {
   $(hover2).mouseover(function () {
     dis2.style.position="absolute";
     dis2.style.top="-300px";
-          dis2.style.backgroundColor="#2A2A2A"
+    dis2.style.left="205px";
+    dis2.style.backgroundColor="#2A2A2A"
     dis2.style.display="block";
     dis2.style.width="350px";
   });
@@ -297,6 +300,7 @@ $(document).ready(function () {
           dis3.style.backgroundColor="#2A2A2A"
     dis3.style.width="350px";
     dis3.style.top="-300px";
+    dis3.style.left="480px";
   });
   $(hover3).mouseout(function () {
     dis3.style.display="none";
