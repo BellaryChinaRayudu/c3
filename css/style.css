@@ -671,8 +671,10 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 30px;
+    padding: 60px;
     box-sizing: border-box;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 .frist-card {
@@ -693,8 +695,19 @@ body {
     box-sizing: border-box;
 	height: 480px;
 }
+.frist-card-iframe iframe{
+	width: 100%;
+}
 .frist-card-iframe div{
-	padding: 30px;
+	padding: 12px;
+}
+.frist-card-iframe div img{
+	padding-left: 10px;
+}
+
+.frist-card-iframe h1{
+	font-size: 16px;
+	margin-bottom: 7px;
 }
 
 .datascience-card {
